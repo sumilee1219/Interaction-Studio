@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+
+
+.scene {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.background {
+    background-color: #99ffff; /* Sky Blue */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.gray-overlay {
+    background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent gray */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1; /* Place the gray overlay above other elements */
+    pointer-events: none; /* Allow mouse events to pass through the overlay */
+}
+
+
+.grass-block {
+    background-color: #66CC00; /* Lawn Green */
+   position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 55vh;
+    width: 100%;
+}
+
+
+
+/*.grass-block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 170vh;
+    width: 100%;
+    background-image: url('grass.png'); /* Replace 'path/to/your/grass.png' with the actual path to your PNG image */
+   /* background-size: cover; /* Adjust the background-size property as needed */
+   /*. background-repeat: no-repeat;
+    z-index: 2;
+}
+*/
+
+.tree {
+    background-color: #8B4513; /* Saddle Brown */
+    position: absolute;
+    height: 80vh;
+
+}
+
+.tree-left {
+    left: 0%;
+    bottom: 0%;
+    z-index: 4;
+        width: 15vw;
+}
+
+.tree-right {
+    right: 0%;
+    bottom: 0%;
+    z-index: 4;
+        width: 15vw;
+}
+ 
+
+.tree-left {
+    left: 0;
+}
+
+.tree-right {
+    right: 0;
+}
+
+.building {
+    position: absolute;
+}
+
+.building1 {
+      background-color: #FFF1A5; /* Gray */
+    left: 40%;
+    bottom: 55%;
+    height: 20vh;
+    width: 8vw;
+    z-index: 1;
+}
+
+.building2 {
+      background-color: #F2E085; /* Gray */
+    left: 35%;
+    bottom: 55%;
+    height: 13vh;
+    width: 5vw;
+        z-index: 1;
+}
+
+.building3 {
+      background-color: #FAEFB9; /* Gray */
+  
+    right: 39%;
+    bottom: 55%;
+    height: 20vh;
+    width: 6vw;
+        z-index: 1;
+}
+
+.building4 {
+        background-color: #E4D071; /* Gray */
+    right: 45%;
+    bottom: 55%;
+    height: 10vh;
+    width: 7vw;
+        z-index: 1;
+}
+
+.building5 {
+        background-color: #E4D071; /* Gray */
+    right: 34%;
+    bottom: 55%;
+    height: 13vh;
+    width: 5vw;
+        z-index: 1;
+}
+
+.building6 {
+        background-color: #FAEFB9; /* Gray */
+    left: 31%;
+    bottom: 55%;
+    height: 16vh;
+    width: 4vw;
+        z-index: 1;
+}
+
+
+
+.leaves {
+    background-color: #009900; /* Green */
+    position: absolute;
+    top: -50%;
+    left: 20%;
+    height: 75vh;
+    width: 50%;
+    border-radius: 50%;
+    transform-origin: bottom center;
+    transform: scaleX(5);
+
+}
+
+.overlay {
+    background: radial-gradient(circle,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.3) 23%,
+        rgba(0, 0, 0, 0.6) 100%);
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top:-50%;
+    left: -50%;
+    z-index:5;
+
+
+}
